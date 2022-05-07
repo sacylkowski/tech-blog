@@ -13,8 +13,6 @@ User.init(
             primaryKey: true,
             autoIncrement: true
         },
-    },
-    {
         // table configuration
         username: {
             type: DataTypes.STRING,
