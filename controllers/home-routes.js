@@ -4,6 +4,7 @@ const { Post, User, Comment } = require("../models");
 
 // rendering the homepage handlebar
 router.get("/", (req, res) => {
+    console.log(req.session);
     Post.findAll({
         attributes: ["id", "post_url", "title", "created_at"],
         include: [
@@ -33,6 +34,10 @@ router.get("/", (req, res) => {
 });
 
 router.get("/login", (req, res) => {
+    if (req.session.loggedIn) {
+        res.redirect("/");
+        return;
+    }
     res.render("login");
 });
 
