@@ -66,6 +66,10 @@ router.post("/", (req, res) => {
                 res.json(dbUserData);
             });
         })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json(err);
+        });
 });
 
 // login route to verify the user's identity

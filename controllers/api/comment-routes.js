@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const { Comment } = require("../../models");
+// const withAuth = require("../../utils/auth");
 
 router.get("/", (req, res) => {
     Comment.findAll()
@@ -10,8 +11,10 @@ router.get("/", (req, res) => {
         });
 });
 
+//withAuth, before req res
 router.post("/", (req, res) => {
     //check the session
+    // mayeb get rid of if statment
     if (req.session) {
         Comment.create({
             comment_text: req.body.comment_text,

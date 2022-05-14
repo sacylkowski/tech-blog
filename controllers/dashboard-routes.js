@@ -1,7 +1,9 @@
 const router = require("express").Router();
 const sequelize = require("../config/connection");
 const { Post, User, Comment } = require("../models");
+// const withAuth = require("../utils/auth");
 
+// withAuth
 router.get("/", (req, res) => {
     Post.findAll({
         where: {
@@ -27,7 +29,7 @@ router.get("/", (req, res) => {
             // serialize data 
             const posts = dbPostData.map(post => post.get({ plain: true }));
             // if user is logged in, then render the dashboard page
-            res.render("dashboard", { loggedIn: true });
+            res.render("dashboard", { posts, loggedIn: true });
         })
         .catch(err => {
             console.log(err);
