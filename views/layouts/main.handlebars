@@ -16,19 +16,23 @@
         <a href="/">Tech Blog</a>
       </h1>
       <nav>
+        <ul class="navbar-links">
         {{#if loggedIn}}
-        <a href="/dashboard">dashboard</a>
-        <button id="logout" class="btn-no-style">logout</button>
+        <li><a href="/dashboard">dashboard</a></li>
+        <li><button id="logout" class="btn-no-style">logout</button></li>
         {{else}}
-        <a href="/login">login</a>
+        <li><a href="/login">login</a></li>
         {{/if}}
+        </ul>
       </nav>
     </header>
     <main>
       {{{ body }}}
     </main>
     <footer>
-      Thanks for visiting!
+      <div>
+            &copy; Sarah Cylkowski
+        </div>
     </footer>
   </div>
   {{#if loggedIn}}

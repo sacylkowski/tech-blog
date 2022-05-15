@@ -12,7 +12,7 @@
   
   a {
     text-decoration: none;
-    color: #225ca3;
+    color: #253D5B;
     font-weight: bold;
     transition: color .1s;
   }
@@ -22,7 +22,7 @@
   }
   
   button {
-    background-color: #225ca3;
+    background-color: #253D5B;
     border: 0;
     padding: 1%;
     color: white;
@@ -37,25 +37,26 @@
   }
   
   nav {
-      padding: 20px;
-      background-color: #6E8387;
+      padding: 15px 10px;
   }
+
   .post-list {
     margin: 0;
     padding: 0;
   }
   
-  textarea, input {
+  .title {
     padding: .5%;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    width: 50%;
   }
-  
-  textarea:focus, input:focus {
-    outline: none;
-    border: 1px solid #3486eb;
+
+  .content {
+    padding: 5px;
+    height: 100px;
+    width: 50%;
   }
-  
+
   textarea {
     min-width: 40%;
     min-height: 100px;
@@ -69,25 +70,18 @@
     display: block;
   }
   
-  .wrapper {
-    width: 100%;
-    min-height: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-  }
-  
   header {
     border-bottom: 1px solid #ccc;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1%;
+    padding: 15px 10%;
+    background-color: #6E8387;
   }
-  
-  header h1 {
-    font-size: 1em;
+
+  .navbar-links li {
+    display: inline-block;
+    padding: 0 20px;
   }
   
   main {
@@ -101,7 +95,7 @@
     padding: 0;
     cursor: pointer;
     text-decoration: none;
-    color: #225ca3;
+    color: #253D5B;
     font-size: 100%;
     font-weight: bold;
     transition: color .1s;
@@ -126,24 +120,9 @@
     line-height: 150%;
   }
   
-  .post .title span {
-    font-style: italic;
-    font-size: 90%;
-    color: #7d7d7d;
-  }
-  
   .edit-link {
     display: block;
     margin: -1.5% 0 2% 0;
-  }
-  
-  .upvote-btn {
-    background-color: #197d0f;
-    transition: background-color .1s;
-  }
-  
-  .upvote-btn:hover {
-    background-color: #1f9c13;
   }
   
   .comment-form {
@@ -171,6 +150,10 @@
   
   .edit-post-form {
     margin-bottom: 5%;
+  }
+
+  li {
+    font-size: 20px;
   }
   
   footer {

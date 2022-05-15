@@ -5,11 +5,13 @@
   </h2>
   <form class="edit-post-form">
     <div>
-      <input name="post-title" type="text" value="{{post.title}}" />
-      <input name="post-content" type="text" value="{{post.content}}" />
+      <input class="title" name="post-title" type="text" value="{{post.title}}" /> 
+      </div>
+      <div>
+      <input class="content" name="post-content" type="text" value="{{post.content}}" />
     </div>
     <div>
-      <p>{{post.comments.length}} {{format_plural "comment" post.comments.length}}</p>>
+      <p>{{post.comments.length}} {{format_plural "comment" post.comments.length}}</p>
     </div>
     <button type="submit">Save post</button>
     <button type="button" class="delete-post-btn">Delete post</button>
