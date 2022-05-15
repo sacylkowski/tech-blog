@@ -3,7 +3,7 @@ async function newForm(event) {
 
     // grabbing post-title and post-url from the form
     const title = document.querySelector("input[name='post-title']").value;
-    const content = document.querySelector("input[name='content']").value;
+    const content = document.querySelector("input[name='post-content']").value;
 
     const response = await fetch(`/api/posts`, {
         method: "POST",

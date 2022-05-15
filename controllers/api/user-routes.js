@@ -53,7 +53,6 @@ router.get("/:id", (req, res) => {
 router.post("/", (req, res) => {
     User.create({
         username: req.body.username,
-        email: req.body.email,
         password: req.body.password
     })
         .then(dbUserData => {
@@ -74,15 +73,15 @@ router.post("/", (req, res) => {
 
 // login route to verify the user's identity
 router.post("/login", (req, res) => {
-    // queried the user table for the user's email
+    // queried the user table for the user's username
     User.findOne({
         where: {
-            email: req.body.email
+            username: req.body.username
         }
     }).then(dbUserData => {
-        // if email not found, throw an error
+        // if username not found, throw an error
         if (!dbUserData) {
-            res.status(400).json({ message: "No user with that email address!" });
+            res.status(400).json({ message: "No user with that username!" });
             return;
         }
 
