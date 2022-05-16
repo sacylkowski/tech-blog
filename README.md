@@ -1,7 +1,7 @@
 # tech-blog
 
  ## Description
-  This application is a tech blog.  Users can make posts and comments.
+  This application is a tech blog.  Users are required to login in to be able to comment on posts and to create posts.
 
   ## Installation
   To install required dependecies, use: 
