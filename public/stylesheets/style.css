@@ -89,6 +89,11 @@
     padding: 2% 4%;
   }
   
+  #post-content {
+    padding: 5px;
+    height: 100px;
+    width: 50%;
+  }
   .btn-no-style {
     background: none;
     border: none;
