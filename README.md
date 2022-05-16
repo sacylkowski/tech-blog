@@ -1,7 +1,7 @@
 # tech-blog
 
  ## Description
-  This application is a tech blog.
+  This application is a tech blog.  Users can make posts and comments.
 
   ## Installation
   To install required dependecies, use: 
@@ -14,9 +14,9 @@
   `localhost:3001`
   to visit the site.  The app is also deployed with Heroku.
 
-  <a href="https://drive.google.com/file/d/1xoHfxlejex-40hUeYTduu2u8yXumaq4i/view">Here is the deployed site.</a>
+  <a href="https://arcane-anchorage-22836.herokuapp.com/">Here is the deployed site.</a>
 
-  <img src="Example-picture.png" alt="image of program running" width="1206" />
+  <img src="Example-app.png" alt="image of program running" width="1206" />
   
 
  ## Built With
